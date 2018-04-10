@@ -1,0 +1,32 @@
+//
+// List
+//
+
+
+// TODO: Add list styles.
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &--bullets-grey {
+    li {
+      position: relative;
+      padding: 0 0 0 15px;
+      margin: 0 0 6px 0;
+      font-size: 1.4rem;
+      color: #666666;
+
+      &:before {
+        content: ' ';
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: grey;
+        position: absolute;
+        top: 6px;
+        left: 0;
+      }
+    }
+  }
+}

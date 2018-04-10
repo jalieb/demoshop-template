@@ -1,0 +1,63 @@
+//
+// Visibility
+//
+
+.hidden--xs {
+  @include media-up(xs) {
+    display: none !important;
+  }
+}
+
+.hidden--sm {
+  @include media-up(sm) {
+    display: none !important;
+  }
+}
+
+.hidden--md {
+  @include media-up(md) {
+    display: none !important;
+  }
+}
+
+.hidden--lg {
+  @include media-up(lg) {
+    display: none !important;
+  }
+}
+
+.hidden--xl {
+  @include media-up(xl) {
+    display: none !important;
+  }
+}
+
+.visible--xs {
+  @include media-up(xs) {
+    display: block !important;
+  }
+}
+
+.visible--sm {
+  @include media-up(sm) {
+    display: block !important;
+  }
+}
+
+.visible--md {
+  @include media-up(md) {
+    display: block !important;
+  }
+}
+
+.visible--lg {
+  @include media-up(lg) {
+    display: block !important;
+  }
+}
+
+.visible--xl {
+  @include media-up(xl) {
+    display: block !important;
+  }
+}

@@ -1,0 +1,53 @@
+//
+// Navigation
+//
+
+
+.navigation {
+  background-color: $navigation-background-color;
+
+  &__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    position: relative;
+  }
+
+  &__item {
+    padding: $navigation-item-padding;
+
+    &:first-child {
+      padding: $navigation-item-padding $navigation-item-padding $navigation-item-padding 0;
+    }
+
+    > a {
+      font-size: $navigation-item-font-size;
+      text-transform: uppercase;
+      color: $navigation-item-color;
+      font-weight: $navigation-item-font-weight;
+    }
+
+    &--dropdown {
+      &:hover {
+        > .navigation__dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #cccccc;
+    z-index: 10;
+  }
+}

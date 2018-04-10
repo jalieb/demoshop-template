@@ -1,0 +1,44 @@
+//
+// Variables
+//
+
+body {
+  background-color: red;
+}
+
+@grid:
+  xs
+    0 575px 100%,
+  sm
+    576px 767px 540px,
+  md
+    768px 991px 720px,
+  lg
+    992px 1199px 960px,
+  xl
+    1200px 1140px 100%;
+
+@tablet-up: ~"all and (min-width: @{grid})";
+
+.test {
+  @media @tablet-up {
+    color: red;
+  }
+}
+
+/*
+.make-col(@index) when (@index > 0) {
+  @element: extract(@grid, 1);
+  @breakpoint: extract(@element,1);
+  @icon1: extract(@element,2);
+  @icon2: extract(@element,3);
+
+  .col--@{breakpoint}-@{icon1} {
+    padding: @icon1 @icon2;
+  }
+
+  .make-col(@index - 1);
+}
+
+.make-col(length(@grid)); //pass the length as counter (split based on comma)
+*/

@@ -1,0 +1,152 @@
+//
+// Variables
+//
+
+
+// Grid
+$breakpoints: (
+  xs: (
+    min: 0px,
+    max: 575px,
+    width: 100%
+  ),
+  sm: (
+    min: 576px,
+    max: 767px,
+    width: 540px
+  ),
+  md: (
+    min: 768px,
+    max: 991px,
+    tar: 720px
+  ),
+  lg: (
+    min: 992px,
+    max: 1199px,
+    width: 960px
+  ),
+  xl: (
+    min: 1200px,
+    max: 100%,
+    width: 1140px
+  )
+);
+
+$grid-gutter-width: 30px;
+
+$columns: 12;
+
+$flex-order-count: $columns; // Do not decrease because of compatibility with existing markup!
+
+
+// Colors
+$brand-primary: #dd2400;
+$brand-primary-light: lighten($brand-primary, 25%);
+$brand-primary-dark: darken($brand-primary, 25%);
+
+$brand-secondary: #022335;
+
+$black: #000;
+$grey-darkest: lighten($black, 12.5%);
+$grey-darker: lighten($black, 25%);
+$grey-dark: lighten($black, 37.5%);
+$grey: lighten($black, 50%);
+$grey-light: lighten($black, 62.5%);
+$grey-lighter: lighten($black, 75%);
+$grey-lightest: #ededed;
+$white: #fff;
+
+$transition-duration: 200ms;
+
+
+// Fonts
+$font-family-sans-serif: 'Work Sans';
+$font-family-serif: 'Times New Roman';
+
+$font-size-base: 1.6rem;
+$font-size-small: $font-size-base * 0.75;
+$font-size-large: $font-size-base * 1.25;
+
+$font-size-h1: 6rem;
+$font-size-h2: 2.6rem;
+$font-size-h3: $font-size-base * 3;
+$font-size-h4: $font-size-base * 2;
+$font-size-h5: $font-size-base * 1;
+$font-size-h6: $font-size-base * 0.75;
+
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-heavy: 700;
+
+$text-color: $grey-darker;
+$link-color: $brand-primary;
+$link-color-hover: $brand-primary-dark;
+$link-color-focus: $link-color;
+
+
+// Borders
+$border-radius-base: 4px;
+$border-radius-small: 2px;
+$border-radius-large: 8px;
+
+
+// Buttons
+$btn-border-base: 2px;
+
+$btn-border-radius-base: 5px;
+$btn-border-radius-small: $btn-border-radius-base;
+$btn-border-radius-large: $btn-border-radius-base;
+
+$btn-padding-base: 10px 12px;
+$btn-padding-small: 7.5px 9px;
+$btn-padding-large: 12px 20px;
+
+$btn-font-size-base: 1rem;
+$btn-font-size-small: $btn-font-size-base * 0.75;
+$btn-font-size-large: $btn-font-size-base * 1.4;
+
+$btn-font-weight-base: $font-weight-heavy;
+$btn-font-weight-small: $btn-font-weight-base;
+$btn-font-weight-large: $btn-font-weight-base;
+
+$btn-primary-border-color: $brand-primary;
+$btn-primary-border-color-hover: $brand-primary-dark;
+$btn-primary-background-color: $brand-primary;
+$btn-primary-background-color-hover: $brand-primary-dark;
+$btn-primary-color: $white;
+$btn-primary-color-hover: $btn-primary-color;
+
+
+// Dropdown
+$dropdown-link-color: $text-color;
+$dropdown-link-font-size: 1.4rem;
+$dropdown-link-font-weight: $font-weight-base;
+
+
+
+//
+// Modules
+//
+
+// Header
+$header-background-color: $brand-secondary;
+$header-separator-color: rgba(255,255,255,.15);
+
+$header-message-color: $white;
+$header-message-font-size: 1.4rem;
+
+$header-config-dropdown-link-color: $white;
+$header-config-dropdown-link-font-size: 1.4rem;
+
+$header-action-button-color: $white;
+$header-action-desc-color: $white;
+
+
+// Navigation
+$navigation-background-color: $brand-secondary;
+$navigation-item-padding: 15px;
+$navigation-item-font-size: 1.6rem;
+$navigation-item-color: $white;
+$navigation-item-font-weight: $font-weight-bold;
