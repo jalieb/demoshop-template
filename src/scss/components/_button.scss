@@ -1,0 +1,41 @@
+//
+// Button
+//
+
+.btn {
+  border-width: $btn-border-base;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: $btn-border-radius-base;
+  padding: $btn-padding-base;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  font-size: $btn-font-size-base;
+  font-weight: $btn-font-weight-base;
+  display: inline-block;
+  line-height: 1;
+
+  &--primary {
+    @include make-button-color($btn-primary-background-color, $btn-primary-background-color-hover,
+            $btn-primary-border-color, $btn-primary-border-color-hover, $btn-primary-color, $btn-primary-color-hover);
+  }
+
+  &--small {
+    @include make-button-size($btn-padding-small, $btn-border-radius-small, $btn-font-size-small, $btn-font-weight-small);
+  }
+
+  &--large {
+    @include make-button-size($btn-padding-large, $btn-border-radius-large, $btn-font-size-large, $btn-font-weight-large);
+  }
+
+  &--block {
+    width: 100%;
+    text-align: center;
+  }
+
+  &--link {
+    border-color: transparent;
+    background-color: transparent;
+  }
+}

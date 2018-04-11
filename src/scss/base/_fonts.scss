@@ -1,0 +1,104 @@
+//
+// Fonts
+//
+
+
+// Work Sans
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 300;
+  src: url("../fonts/work-sans/work-sans-light.otf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 400;
+  src: url("../fonts/work-sans/work-sans-regular.otf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 500;
+  src: url("../fonts/work-sans/work-sans-medium.otf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 600;
+  src: url("../fonts/work-sans/work-sans-semi-bold.otf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 700;
+  src: url("../fonts/work-sans/work-sans-bold.otf");
+}
+
+
+// Linearicons
+@font-face {
+  font-family: "Linearicons";
+  src: url("../fonts/linearicons/linearicons.ttf");
+}
+
+
+// Paragraph
+p {
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  font-family: $font-family-sans-serif;
+  color: $text-color;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-heavy;
+  font-family: $font-family-sans-serif;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+// Links
+a {
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  font-family: $font-family-sans-serif;
+  color: $link-color;
+  transition: color $transition-duration;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:focus {
+    color: $link-color-focus;
+  }
+}

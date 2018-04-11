@@ -1,0 +1,55 @@
+//
+// Form
+//
+
+
+.form {
+  margin: 0;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    &--horizontal {
+      flex-direction: row;
+    }
+  }
+
+  &__label {
+    color: red;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 7.5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-family: "Work Sans";
+
+    &--large {
+      font-size: 1.4rem;
+      padding: 12px 20px;
+      border-radius: 5px;
+    }
+  }
+
+  &__input-group {
+    display: flex;
+    flex-direction: row;
+
+    > * {
+      border-radius: 0;
+    }
+
+    &--large {
+      *:first-child {
+        border-radius: 5px 0 0 5px;
+      }
+
+      *:last-child {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+//
+// Button
+//
+
+
+@mixin make-button-color($background-color, $background-color-hover, $border-color, $border-color-hover, $color, $color-hover) {
+  background-color: $background-color;
+  border-color: $border-color;
+  transition: background-color $transition-duration;
+  color: $color;
+
+  &:focus {
+    background-color: $background-color;
+    border-color: $border-color;
+  }
+
+  &:hover {
+    background-color: $background-color-hover;
+    border-color: $border-color-hover;
+  }
+}
+
+@mixin make-button-size($padding, $border-radius, $font-size, $font-weight) {
+  padding: $padding;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin make-button-style() {
+
+}

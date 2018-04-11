@@ -1,0 +1,81 @@
+{
+    "template": "default.html",
+    "title": "Grid | gridlex.com"
+}
+
+<section class="section section--light">
+    {{= it.include('grid/auto_width.html') }}
+</section>
+<section class="section section--dark">
+    {{= it.include('grid/responsive.html') }}
+</section>
+<section class="section section--light">
+    {{= it.include('grid/offset.html') }}
+</section>
+<section class="section section--dark">
+    {{= it.include('grid/nested.html') }}
+</section>
+<section class="section section--light">
+    {{= it.include('grid/push_pull.html') }}
+</section>
+<section class="section section--dark">
+    {{= it.include('display/flex_align.html') }}
+</section>
+<section class="section section--light">
+    <div class="grid">
+        <div class="row">
+            <div class="col col--xs-12">
+                <button class="btn btn--primary btn--small">
+                    .btn .btn--primary .btn--small
+                </button>
+                <button class="btn btn--primary">
+                    .btn .btn--primary
+                </button>
+                <button class="btn btn--primary btn--large">
+                    .btn .btn--primary .btn--large
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="grid">
+        <div class="row">
+            <div class="col col--xs-12">
+                <div class="box box--test">
+                    <p>
+                        test
+                    </p>
+                    <p>
+                        test
+                    </p>
+                    <p>
+                        test
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="grid">
+        <div class="row">
+            <div class="col col--xs-12">
+                <form action="GET" class="form">
+                    <div class="form__group">
+                        <label for="test-input" class="form__label">
+                            Label
+                        </label>
+                        <input type="text" class="form__input" />
+                    </div>
+                    <div class="form__group--horizontal">
+                        <label for="test-input" class="form__label">
+                            Label
+                        </label>
+                        <input type="text" class="form__input" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

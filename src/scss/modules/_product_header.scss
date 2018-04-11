@@ -1,0 +1,156 @@
+//
+// Product header
+//
+
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #e1e1e1;
+  padding: 0 0 8px 0;
+  margin: 0 0 20px 0;
+
+  @include media-up('lg') {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+
+    @include media-up('lg') {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6px;
+
+    @include media-up('lg') {
+      flex-basis: 100%;
+    }
+
+    > h1 {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #000000;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  &__info {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+    @include media-up('lg') {
+      flex-direction: row;
+    }
+
+    > li {
+      color: $text-color;
+      font-size: 1.4rem;
+      line-height: 22.4px;
+
+      @include media-up('lg') {
+        padding: 0 15px;
+      }
+
+      &:first-child {
+        @include media-up('lg') {
+          padding-left: 0;
+        }
+      }
+
+      &:last-child {
+        @include media-up('lg') {
+          padding-right: 0;
+        }
+      }
+
+      > a {
+        font-size: 1.4rem;
+        color: blue;
+      }
+
+      > i {
+        color: gold;
+
+        &:last-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  &__brand {
+    border-right: 1px solid #e8e8e8;
+
+    > p {
+      color: #666666;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  &__review {
+    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__sku {
+    p {
+      margin: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  &__social-item {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > i {
+      color: #ffffff;
+    }
+
+    &--facebook {
+      background-color: blue;
+    }
+
+    &--google-plus {
+      background-color: red;
+    }
+
+    &--twitter {
+      background-color: turquoise;
+    }
+  }
+}

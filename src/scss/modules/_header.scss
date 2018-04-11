@@ -1,0 +1,143 @@
+//
+// Header module
+//
+
+.header {
+  background-color: $header-background-color;
+
+  &__message {
+    padding: 17px 0;
+
+    p {
+      font-size: $header-message-font-size;
+      margin: 0;
+      color: $header-message-color;
+    }
+  }
+
+  &__config {
+    display: flex;
+    flex-direction: row;
+    padding: 17px 0;
+
+    > .dropdown {
+      .dropdown__link {
+        color: $header-config-dropdown-link-color;
+        font-size: $header-config-dropdown-link-font-size;
+        padding: 0 7.5px;
+      }
+
+      &:first-child {
+        .dropdown__link {
+          padding-left: 0;
+        }
+      }
+
+      &:last-child {
+        .dropdown__link {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &__separator {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $header-separator-color;
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+
+    @include media-up('lg') {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__logo {
+    order: 1;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include media-up('lg') {
+      flex-basis: 250px;
+      margin-bottom: 0;
+    }
+
+    > img {
+      max-height: 17.5px;
+
+      @include media-up('lg') {
+        max-height: 32px;
+      }
+    }
+  }
+
+  &__actions {
+    order: 2;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include media-up('lg') {
+      order: 3;
+      flex-basis: 300px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__action-button {
+    padding: 0 13px;
+    position: relative;
+    color: $header-action-button-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > i {
+      font-size: 2.4rem;
+
+      @include media-up('lg') {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__action-desc {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $header-action-desc-color;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 0 7.5px;
+  }
+
+  &__search {
+    flex-grow: 1;
+    order: 3;
+
+    @include media-up('lg') {
+      order: 2;
+    }
+  }
+
+  &__nav-button {
+    flex-basis: 50px;
+    order: 4;
+
+    @include media-up('lg') {
+      display: none;
+    }
+  }
+}

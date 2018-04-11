@@ -1,0 +1,51 @@
+//
+// Product image
+//
+
+
+.product-image {
+  display: flex;
+  flex-direction: row;
+
+  &__preview {
+    flex: 0 1 50px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+    @include media-up('lg') {
+      flex: 1 1 70px;
+    }
+  }
+
+  &__preview-item {
+    padding: 5px 0;
+
+    img {
+      width: 100%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+    }
+
+    &--active {
+      img {
+        border-color: red;
+      }
+    }
+  }
+
+  &__main {
+    flex: 0 1 100%;
+
+    @include media-up('lg') {
+      flex: 1 1 470px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

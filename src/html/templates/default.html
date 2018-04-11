@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            {{= it.document.title }}
+        </title>
+        <head>
+            {{= it.include('head.html') }}
+        </head>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                {{= it.include('header.html') }}
+            </header>
+            <nav class="navigation">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col--xs-12">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item navigation__item--dropdown">
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                    <ul class="navigation__dropdown">
+                                        Dropdown Item 1
+                                    </ul>
+                                </li>
+                                <li class="navigation__item navigation__item--dropdown">
+                                    <a href="#">
+                                        Item 2
+                                    </a>
+                                    <ul class="navigation__dropdown">
+                                        Dropdown Item 2
+                                    </ul>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#">
+                                        Item 3
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="breadcrumbs">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col--xs-12">
+                            <ol class="breadcrumbs__menu">
+                                <li class="breadcrumbs__item">
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="#">
+                                        Item 2
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__item breadcrumbs__item--active">
+                                    <span>
+                                        Item 3
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{= it.document }}
+            <footer class="footer">
+
+            </footer>
+        </div>
+    </body>
+</html>
