@@ -3,6 +3,14 @@
 //
 
 
+.wrapper {
+  position: relative;
+
+  @include media-up('lg') {
+    position: static;
+  }
+}
+
 .main {
   &--main-index {
 

@@ -1,13 +1,20 @@
-// Nav
+//
+// Main navigation
+//
+
+
 (function() {
 
-    var $nav;
-    var $navItem;
+    $(document).on('click', '[data-nav-toggle]', function () {
+        $navMenu = $('[data-nav-menu]');
+        navMenuOpenClass = 'navigation--mobile-visible';
 
-    $.fn.nav = function() {
-        $nav = $(this);
-    }
+        // TODO: Add slide effect.
+        if($navMenu.hasClass(navMenuOpenClass)) {
+            $navMenu.removeClass(navMenuOpenClass);
+        } else {
+            $navMenu.addClass(navMenuOpenClass);
+        }
+    });
 
 })();
-
-$('[data-nav]').nav();

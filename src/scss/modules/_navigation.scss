@@ -5,6 +5,20 @@
 
 .navigation {
   background-color: $navigation-background-color;
+  display: none;
+
+  @include media-up('lg') {
+    display: block;
+  }
+
+  &--mobile-visible {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    display: block;
+  }
 
   &__menu {
     padding: 0;
