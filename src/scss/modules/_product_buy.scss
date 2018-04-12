@@ -5,14 +5,48 @@
 
 .product-buy {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 20px;
   margin-bottom: 15px;
 
+  @include media-up('sm') {
+    flex-direction: row;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+
+    @include media-up('sm') {
+      flex: 0 1 100%;
+      margin: 0 15px 0 0;
+    }
+
+    @include media-up('md') {
+      flex: 0 0 335px;
+    }
+
+    @include media-up('lg') {
+      flex: 0 0 285px;
+    }
+
+    @include media-up('xl') {
+      flex: 0 0 335px;
+    }
+  }
+
   &__quantity {
-    flex: 1 1 25%;
-    margin: 0 30px 0 0;
+    flex: 0 1 100%;
+    margin: 0 15px 0 0;
+
+    @include media-up('sm') {
+      flex: 0 1 50%;
+    }
+
+    @include media-up('md') {
+      flex: 0 0 120px;
+    }
 
     > input {
       text-align: center;
@@ -20,21 +54,54 @@
   }
 
   &__button {
-    flex: 1 1 40%;
-    margin: 0 20px 0 0;
+    flex: 0 1 60px;
+
+    @include media-up('sm') {
+      flex: 0 1 50%;
+    }
+
+    @include media-up('md') {
+      flex: 0 0 200px;
+    }
+
+    @include media-up('lg') {
+      flex: 0 0 150px;
+    }
+
+    @include media-up('xl') {
+      flex: 0 0 200px;
+    }
   }
 
   &__links {
-    flex: 1 1 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include media-up('sm') {
+      flex: 0 0 120px;
+    }
 
     > a {
-      font-size: 2.4rem;
       padding: 7px 15px;
       color: grey;
       transition: color $transition-duration;
 
       &:hover {
         color: red;
+      }
+
+      > i {
+        font-size: 1.2rem;
+
+        @include media-up('sm') {
+          font-size: 2.4rem;
+        }
+      }
+
+      > span {
+        font-size: 1.4rem;
+        font-weight: 500;
       }
     }
   }
