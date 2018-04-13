@@ -16,31 +16,81 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 200px;
+    width: 250px;
     display: block;
+    z-index: 10;
+    background-color: #ffffff;
   }
 
   &__menu {
-    padding: 0;
+    padding: 30px 15px;
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
-    position: relative;
+    position: static;
+    height: 100%;
+
+    @include media-up('lg') {
+      padding: 0;
+      height: auto;
+      position: relative;
+      flex-direction: row;
+    }
+  }
+
+  &__nav-close {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @include media-up('lg') {
+      display: none;
+    }
+
+    > button {
+      font-size: 2.4rem;
+      color: black;
+    }
   }
 
   &__item {
-    padding: $navigation-item-padding;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0 14px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     &:first-child {
       padding: $navigation-item-padding $navigation-item-padding $navigation-item-padding 0;
     }
 
+    @include media-up('lg') {
+      display: block;
+      padding: $navigation-item-padding;
+      border-bottom: none;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
     > a {
-      font-size: $navigation-item-font-size;
-      text-transform: uppercase;
-      color: $navigation-item-color;
-      font-weight: $navigation-item-font-weight;
+      color: #999999;
+      font-size: 1.6rem;
+
+      @include media-up('lg') {
+        font-size: $navigation-item-font-size;
+        text-transform: uppercase;
+        color: $navigation-item-color;
+        font-weight: $navigation-item-font-weight;
+      }
+    }
+
+    > button {
+      @include media-up('lg') {
+        display: none;
+      }
     }
 
     &--dropdown {
@@ -55,7 +105,7 @@
   &__dropdown {
     display: none;
     position: absolute;
-    top: 48px;
+    top: 0;
     left: 0;
     background-color: #ffffff;
     width: 100%;
@@ -63,5 +113,9 @@
     margin: 0;
     border: 1px solid #cccccc;
     z-index: 10;
+
+    @include media-up('lg') {
+      top: 48px;
+    }
   }
 }

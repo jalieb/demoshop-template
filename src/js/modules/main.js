@@ -5,16 +5,20 @@
 
 (function() {
 
-    $(document).on('click', '[data-nav-toggle]', function () {
+    // Open navigation
+    $(document).on('click', '[data-nav-open]', function () {
         $navMenu = $('[data-nav-menu]');
         navMenuOpenClass = 'navigation--mobile-visible';
 
-        // TODO: Add slide effect.
-        if($navMenu.hasClass(navMenuOpenClass)) {
-            $navMenu.removeClass(navMenuOpenClass);
-        } else {
-            $navMenu.addClass(navMenuOpenClass);
-        }
+        $navMenu.addClass(navMenuOpenClass);
+    });
+
+    // Close navigation
+    $(document).on('click', '[data-nav-close]', function () {
+        $navMenu = $('[data-nav-menu]');
+        navMenuOpenClass = 'navigation--mobile-visible';
+
+        $navMenu.removeClass(navMenuOpenClass);
     });
 
 })();

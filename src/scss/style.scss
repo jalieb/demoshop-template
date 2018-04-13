@@ -43,6 +43,7 @@ html {
 @import "components/form";
 @import "components/badge";
 @import "components/list";
+@import "components/product_card";
 
 
 // Modules
@@ -55,3 +56,4 @@ html {
 @import "modules/product_info";
 @import "modules/product_buy";
 @import "modules/product_categorization";
+@import "modules/bought_together";

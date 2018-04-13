@@ -18,6 +18,7 @@ body {
   xl
     1200px 1140px 100%;
 
+@xs: ~"all and (min-width: @{grid})";
 @tablet-up: ~"all and (min-width: @{grid})";
 
 .test {
@@ -25,20 +26,3 @@ body {
     color: red;
   }
 }
-
-/*
-.make-col(@index) when (@index > 0) {
-  @element: extract(@grid, 1);
-  @breakpoint: extract(@element,1);
-  @icon1: extract(@element,2);
-  @icon2: extract(@element,3);
-
-  .col--@{breakpoint}-@{icon1} {
-    padding: @icon1 @icon2;
-  }
-
-  .make-col(@index - 1);
-}
-
-.make-col(length(@grid)); //pass the length as counter (split based on comma)
-*/
