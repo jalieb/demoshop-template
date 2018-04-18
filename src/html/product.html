@@ -70,12 +70,12 @@
             <div class="col col--xs-12 col--lg-6">
                 <div class="product-info">
                     <div class="product-info__price">
-                    <span class="product-info__price-amount">
-                        € 45,99
-                    </span>
+                        <span class="product-info__price-amount">
+                            € 45,99
+                        </span>
                         <span class="product-info__price-real">
-                        € 55,99
-                    </span>
+                            € 55,99
+                        </span>
                         <p class="product-info__price-percentage">
                             (-18 %)
                         </p>
@@ -110,17 +110,98 @@
                         </ul>
                     </div>
                 </div>
+                <div class="product-promotion">
+                    <div class="product-promotion__wrapper">
+                        <div class="product-promotion__desc">
+                            <p>
+                                Don't Miss Out!  This promotion will expires in
+                            </p>
+                        </div>
+                        <div class="product-promotion__time">
+                            <div class="product-promotion__time-entry">
+                                <div class="product-promotion__input">
+                                    <span>
+                                        5
+                                    </span>
+                                </div>
+                                <div class="product-promotion__label">
+                                    <span>
+                                        Tage
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product-promotion__time-entry">
+                                <div class="product-promotion__input">
+                                    <span>
+                                        5
+                                    </span>
+                                </div>
+                                <div class="product-promotion__label">
+                                    <span>
+                                        Stunden
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product-promotion__time-entry">
+                                <div class="product-promotion__input">
+                                    <span>
+                                        5
+                                    </span>
+                                </div>
+                                <div class="product-promotion__label">
+                                    <span>
+                                        Minuten
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product-promotion__time-entry">
+                                <div class="product-promotion__input">
+                                    <span>
+                                        5
+                                    </span>
+                                </div>
+                                <div class="product-promotion__label">
+                                    <span>
+                                        Sekunden
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-promotion__wrapper">
+                        <div class="product-promotion__desc">
+                            <p>
+                                Verkaufte Artikel
+                            </p>
+                        </div>
+                        <div class="product-promotion__sold">
+                            <div class="product-promotion__sold-bar">
+                                <div class="product-promotion__sold-bar product-promotion__sold-bar--done"></div>
+                            </div>
+                            <div class="product-promotion__sold-label">
+                                <span>
+                                    30 / 100
+                                </span>
+                                <span>
+                                    Sold
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-buy">
                     <form action="#" method="GET" class="product-buy__form">
                         <div class="product-buy__quantity">
-                            <input type="number"
-                                   placeholder="1"
-                                   class="form__input form__input--large" />
+                            <select name="quantity" id="quantity" class="form__select">
+                                <option value="test1">Test 1</option>
+                                <option value="test2">Test 2</option>
+                                <option value="test3">Test 3</option>
+                            </select>
                         </div>
                         <div class="product-buy__button">
                             <a href="#" class="btn btn--primary btn--large btn--block">
                                 <span class="hidden--xs visible--sm">
-                                    Buy
+                                    In den Warenkorb
                                 </span>
                                 <i class="icon icon--cart hidden--sm"></i>
                             </a>
@@ -185,6 +266,127 @@
                                 </a>
                             </li>
                         </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col--xs-12">
+                <div class="bought-together">
+                    <div class="row">
+                        <div class="col col--xs-12">
+                            <div class="bought-together__headline">
+                                <h2>
+                                    Frequently bought together
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--xs-12 col--lg-3">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__image">
+                                        <img src="img/product_main_image.jpg" alt="Main Image.">
+                                    </div>
+                                    <div class="product-card__actions">
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__name">
+                                    <h2>
+                                        Product name
+                                    </h2>
+                                </div>
+                                <div class="product-card__review">
+                                    <i class="icon icon--star"></i>
+                                    <i class="icon icon--star"></i>
+                                    <i class="icon icon--star-half"></i>
+                                    <i class="icon icon--star-empty"></i>
+                                    <i class="icon icon--star-empty"></i>
+                                    <span>
+                                        (3 Reviews)
+                                    </span>
+                                </div>
+                                <div class="product-card__price product-card__price--default">
+                                    <span>
+                                        63,99 €
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--xs-12 col--lg-3">
+                            <div class="product-card">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__image">
+                                        <img src="img/product_main_image.jpg" alt="Main Image.">
+                                    </div>
+                                    <div class="product-card__actions">
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="icon icon--heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__name">
+                                    <h2>
+                                        Product name
+                                    </h2>
+                                </div>
+                                <div class="product-card__review">
+                                    <i class="icon icon--star"></i>
+                                    <i class="icon icon--star"></i>
+                                    <i class="icon icon--star-half"></i>
+                                    <i class="icon icon--star-empty"></i>
+                                    <i class="icon icon--star-empty"></i>
+                                    <span>
+                                        (3 Reviews)
+                                    </span>
+                                </div>
+                                <div class="product-card__price product-card__price--default">
+                                    <span>
+                                        63,99 €
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--xs-12 col--lg-3">
+                            <div class="bought-together__price">
+                                <span>
+                                    Total price:
+                                </span>
+                                <span>
+                                    45,99 €
+                                </span>
+                            </div>
+                            <div class="bought-together__buttons">
+                                <button class="btn btn--primary btn--block">
+                                    Add all to cart
+                                </button>
+                                <button class="btn btn--outline-primary btn--block">
+                                    Add all to wishlist
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

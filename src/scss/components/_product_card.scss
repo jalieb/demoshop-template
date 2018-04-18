@@ -14,7 +14,7 @@
     border-color: grey;
 
     .product-card__actions {
-      display: flex;
+      // transform: translateY(100px);
     }
   }
 
@@ -29,13 +29,14 @@
   }
 
   &__actions {
+    display: flex;
     position: absolute;
-    display: none;
     justify-content: space-between;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255,255,255,0.7);
+    transition: transform $transition-duration;
   }
 
   &__name {

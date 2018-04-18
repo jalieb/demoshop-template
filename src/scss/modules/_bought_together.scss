@@ -4,5 +4,62 @@
 
 
 .bought-together {
+  border: 1px solid #d9d9d9;
+  padding: 30px;
 
+  &__headline {
+    margin-bottom: 45px;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .product-card {
+    position: relative;
+    border: none;
+
+    @include media-up('md') {
+      padding-right: 65px;
+    }
+
+    &:hover {
+      border: none;
+    }
+
+    &:after {
+      font-family: 'Linearicons';
+      font-size: 2rem;
+      content: "\e881";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      color: grey;
+
+      @include media-up('md') {
+        top: 50%;
+        right: 10px;
+      }
+    }
+  }
+
+  &__price {
+    > span {
+      &:first-child {
+        font-size: 1.4rem;
+        color: grey;
+        font-weight: 400;
+      }
+
+      &:last-child {
+        font-size: 2px;
+        font-weight: 600;
+
+      }
+    }
+  }
 }

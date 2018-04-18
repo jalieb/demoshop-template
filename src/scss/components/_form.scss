@@ -52,4 +52,13 @@
       }
     }
   }
+
+  &__select {
+    height: 42px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    background-color: transparent;
+  }
 }

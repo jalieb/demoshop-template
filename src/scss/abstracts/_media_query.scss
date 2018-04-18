@@ -9,7 +9,7 @@
 }
 
 @mixin media-down($max-device) {
-  @media all and (min-width: map-get(map-get($breakpoints, $max-device), min)) {
+  @media all and (max-width: map-get(map-get($breakpoints, $max-device), max)) {
     @content
   }
 }

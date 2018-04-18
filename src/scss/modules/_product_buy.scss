@@ -19,7 +19,7 @@
     flex-direction: row;
 
     @include media-up('sm') {
-      flex: 0 1 100%;
+      flex: 0 0 345px;
       margin: 0 15px 0 0;
     }
 
@@ -28,7 +28,7 @@
     }
 
     @include media-up('lg') {
-      flex: 0 0 285px;
+      flex: 0 0 315px;
     }
 
     @include media-up('xl') {
@@ -41,10 +41,18 @@
     margin: 0 15px 0 0;
 
     @include media-up('sm') {
-      flex: 0 1 50%;
+      flex: 0 0 130px;
     }
 
     @include media-up('md') {
+      flex: 0 0 120px;
+    }
+
+    @include media-up('lg') {
+      flex: 0 0 110px;
+    }
+
+    @include media-up('xl') {
       flex: 0 0 120px;
     }
 
@@ -57,7 +65,7 @@
     flex: 0 1 60px;
 
     @include media-up('sm') {
-      flex: 0 1 50%;
+      flex: 0 0 200px;
     }
 
     @include media-up('md') {
@@ -65,7 +73,7 @@
     }
 
     @include media-up('lg') {
-      flex: 0 0 150px;
+      flex: 0 0 190px;
     }
 
     @include media-up('xl') {
