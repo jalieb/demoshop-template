@@ -3,8 +3,14 @@
 //
 
 
+html {
+  font-size: 10px;
+}
+
 .wrapper {
   position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
 
   @include media-up('lg') {
     position: static;
@@ -19,4 +25,8 @@
   &--product {
     padding-top: 30px;
   }
+}
+
+.footer {
+  border-top: 1px solid #e1e1e1;
 }

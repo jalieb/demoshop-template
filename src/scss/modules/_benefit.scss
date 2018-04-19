@@ -1,0 +1,70 @@
+//
+// Benefits module
+//
+
+
+.benefit {
+  padding: 55px 0;
+  margin: 0;
+  border-bottom: 1px solid #e1e1e1;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+
+    @include media-down('sm') {
+      justify-content: center;
+    }
+
+    @include media-up('lg') {
+      border-right: 1px solid #e1e1e1;
+    }
+  }
+
+  > .row > .col {
+    &:last-child {
+      .benefit__item {
+        border-right: none;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px 0 0;
+    padding: 0;
+
+    > i {
+      font-size: 4rem;
+      font-weight: 400;
+      color: red;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+  }
+}

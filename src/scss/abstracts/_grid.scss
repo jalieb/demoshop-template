@@ -99,29 +99,29 @@
 }
 
 @mixin make-align-self($viewport) {
-  &--#{$viewport}-top {
+  &--self-#{$viewport}-top {
     align-self: flex-start;
   }
 
-  &--#{$viewport}-middle {
+  &--self-#{$viewport}-middle {
     align-self: center;
   }
 
-  &--#{$viewport}-bottom {
+  &--self-#{$viewport}-bottom {
     align-self: flex-end;
   }
 }
 
 @mixin make-justify-self($viewport) {
-  &--#{$viewport}-left {
+  &--self-#{$viewport}-left {
     justify-self: flex-start;
   }
 
-  &--#{$viewport}-center {
+  &--self-#{$viewport}-center {
     justify-self: center;
   }
 
-  &--#{$viewport}-right {
+  &--self-#{$viewport}-right {
     justify-self: flex-end;
   }
 }

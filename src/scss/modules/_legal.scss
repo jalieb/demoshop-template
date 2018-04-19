@@ -1,0 +1,47 @@
+//
+// Legal module
+//
+
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0;
+
+  @include media-up('lg') {
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #000000;
+    font-size: 1.4rem;
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-up('md') {
+      flex-direction: row;
+      align-items: unset;
+    }
+  }
+
+  &__payment-desc {
+    color: #000000;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 1.4rem;
+
+    @include media-up('md') {
+      margin: 0 15px 15px 0;
+    }
+  }
+}
