@@ -1,2 +1,0 @@
-# demoshop-template
-Demoshop Template

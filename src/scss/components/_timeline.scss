@@ -1,0 +1,121 @@
+//
+// Timeline component
+//
+
+$timeline-bar-width: 5px;
+$timeline-content-spacing: 150px;
+$timeline-icon-size: 70px;
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @include media-up('lg') {
+      flex-direction: row;
+      width: 50%;
+      position: relative;
+    }
+
+    &:before {
+      @include media-up('lg') {
+        content: ' ';
+        width: $timeline-bar-width;
+        height: 100%;
+        background-color: green;
+        position: absolute;
+      }
+    }
+
+    &:first-child {
+      &:before {
+        @include media-up('lg') {
+          height: 50%;
+          top: 50%;
+        }
+      }
+    }
+
+    &:last-child {
+      &:before {
+        @include media-up('lg') {
+          height: 50%;
+          bottom: 50%;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      @include media-up('lg') {
+        align-self: flex-start;
+        justify-content: flex-end;
+        right: -($timeline-bar-width / 2);
+      }
+
+      .timeline__icon {
+        right: -(($timeline-icon-size - $timeline-bar-width) / 2);
+      }
+
+      .timeline__content {
+        @include media-up('lg') {
+          margin-right: $timeline-content-spacing;
+          text-align: right;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      @include media-up('lg') {
+        align-self: flex-end;
+        justify-content: flex-start;
+        left: -($timeline-bar-width / 2);
+      }
+
+      .timeline__icon {
+        left: -(($timeline-icon-size - $timeline-bar-width) / 2);
+      }
+
+      .timeline__content {
+        @include media-up('lg') {
+          margin-left: $timeline-content-spacing;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    background-color: red;
+    border-radius: 100%;
+    height: $timeline-icon-size;
+    width: $timeline-icon-size;
+    top: calc(50% - #{$timeline-icon-size} / 2);
+    line-height: $timeline-icon-size;
+    text-align: center;
+    align-self: center;
+
+    @include media-up('lg') {
+      position: absolute;
+    }
+  }
+
+  &__content {
+    background: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__head {
+    color: blue;
+  }
+
+  &__desc {
+    color: red;
+  }
+}
